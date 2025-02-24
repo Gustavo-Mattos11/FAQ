@@ -27,7 +27,7 @@ function addElements(content) {
 function createCard(content) {
   const card = document.createElement('div')
   card.className = 'divQuestion'
-  const title = document.createElement('h2')
+  const title = document.createElement('a')
   title.className = 'Question'
   const img = document.createElement(`img`)
   img.src = content?.img
