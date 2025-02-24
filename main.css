@@ -2,63 +2,98 @@ body {
 
     margin: 0;
 }
+
 .attribution {
     font-size: 11px;
     text-align: center;
-  }
+}
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}
 
-main {
-    position: 0;
-    width: 375px;
-    background-color: hsl(275, 100%, 97%);
+
+
+
+.background-top {
+    top: 0;
+    width: 100%;
     background-image: url("assets/images/background-pattern-mobile.svg");
     background-repeat: no-repeat;
-    background-size: 375px;
-    height: 100vh;
+    background-size: cover;
+    background-position: top left;
+    height: 40vh;
+    position: relative;
+    
 }
-.background {
+.background-bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    position: relative;
+    background-color: hsl(275, 100%, 97%);
+    height: 60vh;
+    
+}
+.float {
+    position: absolute;
+    top: 50%;  /* Posiciona a div3 no meio verticalmente */
+    left: 50%;  /* Posiciona a div3 no meio horizontalmente */
+    transform: translate(-50%, -50%);  /* Ajusta para centralizar completamente */
+    width: 70%;
+    
+    
+    
 }
 .center {
-    display: flex;
-    flex-direction: column;
+    size: 100%;
     background-color: white;
-    width: 70%;
-    height: 60%;
     border-radius: 8px;
     padding: 8%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.title{
+.title {
     display: flex;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.title h2{
+
+.title h2 {
     margin: auto;
     margin-left: 10%;
     font-size: 30px;
 }
-.subtitle{
+
+.concept {
     display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
 }
-.subtitle img{
-    margin-left: 20%;
-}
+
 .description {
-    text-justify:distribute;
+    text-justify: distribute;
     color: gray;
     line-height: 1.3em;
     letter-spacing: 0.px;
     font-size: 16px;
+}
+
+.divQuestion {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Question {
+    font-size: 20px;
 }
